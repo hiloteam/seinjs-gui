@@ -1,0 +1,49 @@
+{
+  "name": "seinjs-gui",
+  "version": "0.8.10",
+  "description": "GUI System for Sein.js.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "../../node_modules/.bin/tsc -p ./tsconfig.json",
+    "doc": "node ./gen-doc.js",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:SeinJS/Sein.js.git"
+  },
+  "keywords": [
+    "Game engine",
+    "Sein.js",
+    "SeinJS"
+  ],
+  "authors": [
+    {
+      "name": "Tianyu Dai (dtysky)",
+      "email": "dtysky@outlook.com"
+    },
+    {
+      "name": "AlchemyZJK",
+      "email": "alchemyzjk@foxmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "http://github.com/SeinJS/Sein.js/issues"
+  },
+  "files": [
+    "README.md",
+    "lib",
+    "LICENCE"
+  ],
+  "homepage": "http://github.com/SeinJS/Sein.js#readme",
+  "devDependencies": {
+    "@types/react-reconciler": "^0.18.0"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.1",
+    "react": "^16.9.0",
+    "react-reconciler": "^0.21.0"
+  }
+}
