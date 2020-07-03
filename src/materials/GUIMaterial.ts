@@ -111,7 +111,7 @@ void main() {
     });
   }
 
-  public getCustomRenderOption(options: any) {
+  public getCustomRenderOption = (options: any) => {
     const background = this.getUniform('u_background').value;
     const uvMatrix = this.getUniform('u_backgroundUVMatrix').value;
 

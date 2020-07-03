@@ -31,7 +31,7 @@ declare module 'seinjs' {
     export function isSystemActor(value: Sein.SObject): value is SystemActor;
     export class Layer extends GUILayer {}
     export interface ILayerOptions extends IGUILayerOptions {}
-    export class Component<IPropTypes, IStateTypes> extends ReactComponent<IPropTypes, IStateTypes> {}
+    export class Component<IPropTypes extends any = {}, IStateTypes extends any = {}> extends ReactComponent<IPropTypes, IStateTypes> {}
     export interface IContainerPropTypes extends TContainerPropTypes {}
     export function Container(props: IContainerPropTypes): JSX.Element;
     export interface ILabelPropTypes extends TLabelPropTypes {}

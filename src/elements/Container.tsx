@@ -616,11 +616,11 @@ export class ContainerElement<IPropTypes extends IContainerPropTypes = IContaine
       context.fillRect(-width / 2, -height / 2, width, height);
     }
     else if (Sein.isTexture(background)) {
-      const img = background.image as HTMLCanvasElement;
+      const img = background.image as any;
       context.drawImage(img, 0, 0, img.width, img.height, -width / 2, -height / 2, width, height);
     }
     else if (isTextureProp(background)) {
-      const img = background.texture.image as HTMLCanvasElement;
+      const img = background.texture.image as any;
       context.drawImage(img, 0, 0, img.width, img.height, -width / 2, -height / 2, width, height);
     }
     else {

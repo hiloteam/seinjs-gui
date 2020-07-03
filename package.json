@@ -1,6 +1,6 @@
 {
   "name": "seinjs-gui",
-  "version": "0.8.10",
+  "version": "0.8.11",
   "description": "GUI System for Sein.js.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
